@@ -12,7 +12,7 @@
 ## Funcionalidad
 - Se requiere mostrar una lista con los datos obtenidos de la API (primer path)
 - Navegar a una segunda pantalla al presionar en un item
-- Se requiere mostrar una segunda pantalla con los detalles del item (segundo path) seleccionado previamente
+- Se requiere mostrar una segunda pantalla con los detalles del item seleccionado previamente
 - Navegar hacia atrás desde la segunda pantalla mediante un boton.
 
 ## Aspectos a evaluar:
