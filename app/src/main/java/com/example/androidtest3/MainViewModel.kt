@@ -19,7 +19,7 @@ class MainViewModel @Inject constructor(
 ):ViewModel() {
 
     private val _getCharacter = MutableStateFlow<CharacterResponse?>(null)
-    val getCharacter: StateFlow<CharacterResponse?> get() = _getCharacter.asStateFlow()
+    val getCharacter: StateFlow<CharacterResponse?> = _getCharacter
 
     init {
         detonatorCharacter()

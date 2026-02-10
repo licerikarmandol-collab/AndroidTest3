@@ -1,5 +1,6 @@
 package com.example.androidtest3
 
+import com.example.androidtest3.rickandmorty.ui.api.ApiClient
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

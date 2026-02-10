@@ -4,7 +4,7 @@ plugins {
     id("kotlin-kapt")
     alias(libs.plugins.hiltPlugin)
     alias(libs.plugins.kspPlugin)
-
+    alias(libs.plugins.kotlin.compose)
 }
 
 android {
@@ -31,6 +31,7 @@ android {
         }
     }
     buildFeatures {
+        compose = true
         viewBinding = true
     }
     compileOptions {
@@ -39,6 +40,9 @@ android {
     }
     kotlinOptions {
         jvmTarget = "11"
+    }
+    composeOptions {
+        kotlinCompilerExtensionVersion = libs.versions.composeCompiler.get()
     }
 }
 
@@ -56,12 +60,28 @@ dependencies {
 
     implementation(libs.hilt.lib)
     kapt(libs.hilt.compiler)
+    implementation(libs.androidx.ui.graphics)
+    androidTestImplementation(platform(libs.compose.bom))
+    androidTestImplementation(libs.androidx.ui.test.junit4)
+    debugImplementation(libs.androidx.ui.tooling)
+    debugImplementation(libs.androidx.ui.test.manifest)
 
     implementation(libs.retrofit.lib)
     implementation(libs.gson.lib)
     implementation(libs.okhttp.lib)
     implementation(libs.okhttp.lib.interceptor)
     implementation(libs.glide)
+
+    //compose
+    implementation(platform(libs.compose.bom))
+    implementation(libs.compose.ui)
+    implementation(libs.compose.ui.tooling.preview)
+    implementation(libs.compose.material3)
+    implementation(libs.activity.compose)
+    implementation(libs.navigation.compose)
+    implementation(libs.lifecycle.runtime.compose)
+    implementation(libs.lifecycle.viewmodel.compose)
+    implementation(libs.hilt.navigation.compose)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)

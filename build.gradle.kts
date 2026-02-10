@@ -5,4 +5,5 @@ plugins {
     kotlin("kapt") version "1.9.22"
     alias(libs.plugins.hiltPlugin) apply false
     alias(libs.plugins.kspPlugin) apply false
+    alias(libs.plugins.kotlin.compose) apply false
 }

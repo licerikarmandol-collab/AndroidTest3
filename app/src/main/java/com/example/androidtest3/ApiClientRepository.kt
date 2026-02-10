@@ -1,5 +1,6 @@
 package com.example.androidtest3
 
+import com.example.androidtest3.rickandmorty.ui.api.ApiClient
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
 import javax.inject.Inject
