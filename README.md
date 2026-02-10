@@ -15,11 +15,6 @@
 - Se requiere mostrar una segunda pantalla con los detalles del item seleccionado previamente
 - Navegar hacia atrás desde la segunda pantalla mediante un boton.
 
-## Aspectos a evaluar:
-- Hacer uso de buenas prácticas
-- Hacer uso de alguna arquitectura, patrones de diseño
-- Utilizar Compose
-
 ## Extras
 Encontraras clases creadas previamente para ayudarte a ahorra un poco de tiempo
 
